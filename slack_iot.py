@@ -23,3 +23,14 @@ while True:
                   print(sc.api_call(
                     "chat.postMessage", channel="#test", text="Something wrong... Sorry :( :weary: :no_entry:",
                     username='codecool_bot', icon_emoji=':no_entry:'))
+
+          elif (evt['text'] == "#stop_make_coffee" ):
+              try:
+                  urllib.request.urlopen("http://192.168.150.175:8081/?lightoff").read()
+                  print(sc.api_call(
+                    "chat.postMessage", channel="#test", text="I stopped to make coffee :) :x:",
+                    username='codecool_bot', icon_emoji=':coffee:'))
+              except:
+                  print(sc.api_call(
+                    "chat.postMessage", channel="#test", text="Something wrong... Sorry :( :weary: :no_entry:",
+                    username='codecool_bot', icon_emoji=':coffee:'))
