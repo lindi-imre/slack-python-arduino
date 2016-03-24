@@ -26,11 +26,20 @@ def authors_msg():
                     username='codecool_bot', icon_emoji=CC_LOGO)
 
 
+def whyareyouhere_message():
+    return sc.api_call(
+         "chat.postMessage", channel="#test",
+         text="I'm here to serve you!!!",
+         username='codecool_bot', icon_emoji=':cc:')
+
+
 def do_something(message: str):
     if message == "#help":
         print(help_msg())
     elif message == "#authors":
         print(authors_msg())
+    elif message == "#whyareyouhere":
+        print(whyareyouhere_message())
 
 
 while True:
