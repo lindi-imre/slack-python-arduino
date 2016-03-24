@@ -16,11 +16,10 @@ while True:
                     print(sc.api_call(
                     "chat.postMessage", channel="#test", text="Commandlist: \n"
                                                               "#authors - Writes out authors \n"
-                                                              "#master -  \n"
                                                               "#todo_add: something - Adds a todo element \n"
                                                               "#todo_del: something - Removes your todo element \n"
                                                               "#todo - Writes out your todo list \n"
                                                               "#weather - Writes out current weather \n"
                                                               "#make_coffee - Turn on the coffe machine ;) \n"
                                                               "#stop_coffee - Turn off the coffe machine",
-                    username='codecool_bot'))
+                                                              username='codecool_bot'))
