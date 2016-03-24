@@ -22,7 +22,7 @@ def help_msg():
 
 def authors_msg():
     return SC.api_call(
-                    "chat.postMessage", channel="#test", text="Kristóf Bodnár, Imre Lindi, Dávid Lévai",
+                    "chat.postMessage", channel="#test", text="Kristof Bodnar, Imre Lindi, David Levai",
                     username='codecool_bot', icon_emoji=CC_LOGO)
 
 
