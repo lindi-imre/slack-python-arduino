@@ -25,6 +25,7 @@ while True:
                     "chat.postMessage", channel="#test", text="Removed from TO-DO list: " + message[10:],
                     username='codecool_bot'))
                 if message == "#todolist":
-                    print(sc.api_call(
-                    "chat.postMessage", channel="#test", text=todo_list,
-                    username='codecool_bot'))
+                    for todos in todo_list:
+                        print(sc.api_call(
+                        "chat.postMessage", channel="#test", text=todos,
+                        username='codecool_bot'))
